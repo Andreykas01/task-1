@@ -1,6 +1,5 @@
 'use strict';
 
-
 let money = +prompt ("Ваш бюджет на месяц?", ""),
     time = prompt ("Введите дату в формате YYYY-MM-DD", "");
     
@@ -12,7 +11,6 @@ let appData = {
     income: [],
     savings: false
 };
-
 
 for (let i = 0; i < 2; i++) {
     let a = prompt ("Введите обязательную статью расходов в этом месяце", ""),
@@ -30,13 +28,9 @@ for (let i = 0; i < 2; i++) {
 
 };
 
-
-
 appData.moneyPerDay = appData.budget / 30;
 
-
 alert ("Бюджет на 1 день составляет " + appData.moneyPerDay + "руб.");
-
 
 if (appData.moneyPerDay < 100) {
     console.log ("Это минимальный уровень достатка!");
